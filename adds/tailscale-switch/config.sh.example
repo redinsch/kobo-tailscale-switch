@@ -1,0 +1,25 @@
+# tailscale-switch settings. Copy to config.sh or let the KOReader plugin write it.
+# Values are shell strings: keep the quotes.
+
+# Wi-Fi networks where Tailscale stays off, comma separated. An entry is a
+# network name, an access point (aa:bb:cc:dd:ee:ff, whatever its name), or
+# name@aa:bb:cc:dd:ee:ff for that access point only under that name.
+HOME_NETWORKS='MyHomeWifi@a1:b2:c3:d4:e5:f6,Office'
+
+# Passed as --login-server=... to tailscale up. Empty means the Tailscale default.
+LOGIN_SERVER='https://headscale.example.org'
+
+# Any other flags for tailscale up.
+UP_ARGS='--accept-routes'
+
+# Leave empty to search the PATH and the usual places.
+TAILSCALE_BIN=''
+
+# Command that starts tailscaled when it is not running. Empty means never start it.
+TAILSCALED_START=''
+
+# 1: auto chooses up or down from the Wi-Fi network. 0: auto does nothing.
+AUTO='1'
+
+# 1: the KOReader plugin shows a short message after each automatic switch.
+NOTIFY='1'

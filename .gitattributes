@@ -1,0 +1,4 @@
+# shell scripts and the NickelMenu file must keep LF line endings on the Kobo
+*.sh text eol=lf
+adds/nm/* text eol=lf
+*.lua text eol=lf

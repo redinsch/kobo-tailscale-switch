@@ -1,0 +1,6 @@
+# Tailscale entries for NickelMenu. Copy to /mnt/onboard/.adds/nm/tailscale
+menu_item :main :Tailscale on :cmd_spawn :quiet:sh /mnt/onboard/.adds/tailscale-switch/tailscale-switch.sh up
+menu_item :main :Tailscale off :cmd_spawn :quiet:sh /mnt/onboard/.adds/tailscale-switch/tailscale-switch.sh down
+menu_item :main :Tailscale by network :cmd_spawn :quiet:sh /mnt/onboard/.adds/tailscale-switch/tailscale-switch.sh auto
+menu_item :main :Tailscale status :cmd_output :8000:sh /mnt/onboard/.adds/tailscale-switch/tailscale-switch.sh status
+menu_item :main :Tailscale check network :cmd_output :8000:sh /mnt/onboard/.adds/tailscale-switch/tailscale-switch.sh check
